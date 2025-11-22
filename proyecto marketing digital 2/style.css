@@ -1,0 +1,209 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navegación */
+header {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.contenedor-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.menu-items li {
+  position: relative;
+}
+.menu-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+.menu-items a:hover {
+  background: #ff6600;
+  border-radius: 5px;
+}
+/* Submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #2a2a2a;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+.menu-items li:hover .submenu {
+  display: block;
+}
+
+/* Botón menú responsive */
+.btn-menu {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 70vh;
+  background: linear-gradient(to right, #ff6600, #ff9900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* Servicios */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+}
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Nosotros */
+.nosotros {
+  background: #fafafa;
+  padding: 60px 20px;
+  text-align: center;
+}
+.nosotros h2 {
+  margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto {
+  padding: 60px 20px;
+  text-align: center;
+}
+.contacto form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacto input, 
+.contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contacto button:hover {
+  background: #e65c00;
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .menu-items {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background: #1e1e1e;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  .menu-items.show {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

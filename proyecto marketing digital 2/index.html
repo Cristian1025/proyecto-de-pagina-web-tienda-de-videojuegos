@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia de Marketing Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Script simple para menú hamburguesa
+    function toggleMenu() {
+      document.querySelector(".menu-items").classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <!-- Navegación -->
+  <header>
+    <div class="contenedor-menu">
+      <div class="logo">🚀 MarketingPro</div>
+      <nav>
+        <div class="btn-menu" onclick="toggleMenu()">☰</div>
+        <ul class="menu-items">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a>
+            <ul class="submenu">
+              <li><a href="#seo">SEO</a></li>
+              <li><a href="#ads">Publicidad en Ads</a></li>
+              <li><a href="#redes">Gestión de Redes</a></li>
+            </ul>
+          </li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-textos">
+      <h1>Impulsa tu marca con Marketing Digital</h1>
+      <p>Soluciones creativas y estrategias digitales para hacer crecer tu negocio en línea.</p>
+      <a href="#servicios" class="btn">Ver Servicios</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="servicios" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+      <div class="card" id="seo">
+        <h3>SEO</h3>
+        <p>Optimización en buscadores para aumentar la visibilidad de tu web.</p>
+      </div>
+      <div class="card" id="ads">
+        <h3>Publicidad en Ads</h3>
+        <p>Campañas efectivas en Google Ads y redes sociales.</p>
+      </div>
+      <div class="card" id="redes">
+        <h3>Gestión de Redes</h3>
+        <p>Construimos tu comunidad y fortalecemos tu marca en redes sociales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section class="nosotros" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una agencia especializada en Marketing Digital con más de 5 años de experiencia ayudando a negocios a crecer en internet.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MarketingPro - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

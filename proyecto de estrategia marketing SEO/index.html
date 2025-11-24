@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Agencia de marketing digital - servicios de SEO, paid ads, diseño web, social media y contenidos." />
+  <title>Agencia Digital - Marketing y Crecimiento</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO open graph (opcional) -->
+  <meta property="og:title" content="Agencia Digital - Marketing y Crecimiento">
+  <meta property="og:description" content="Estrategias en SEO, Ads, Social Media y diseño web para acelerar tu negocio.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+  <!-- Sticky header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Inicio - Agencia Digital">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><rect width='36' height='36' rx='6' fill='%233a86ff'/><text x='50%' y='55%' font-size='18' fill='white' text-anchor='middle' font-family='Arial'>AD</text></svg>" alt="Logo" />
+        <span>Agencia Digital</span>
+      </a>
+
+      <!-- Hamburger accessible -->
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#pricing">Precios</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li class="cta"><a class="btn btn-primary" href="#contact">Obtener propuesta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Impulsa tu negocio con marketing digital que convierte</h1>
+          <p class="lead">Estrategias integradas en SEO, anuncios, contenidos y diseño que aumentan ventas y generan clientes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Solicitar diagnóstico</a>
+            <button class="btn btn-ghost" id="openModal">Descargar guía gratis</button>
+          </div>
+
+          <ul class="trust">
+            <li>✅ +500 clientes atendidos</li>
+            <li>📈 +65% ROI promedio</li>
+            <li>🌎 Trabajo remoto y local</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="card device">
+            <div class="screen">
+              <img src="estadistica.jpeg" alt="Ejemplo campañas" />
+            </div>
+            <div class="stats">
+              <div><strong>+120%</strong><span> tráfico</span></div>
+              <div><strong>+45%</strong><span> conversiones</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Servicios</h2>
+        <p class="section-sub">Ofrecemos un paquete completo para llevar tu marca al siguiente nivel.</p>
+
+        <div class="grid services-grid">
+          <article class="service-card">
+            <div class="icon">🔍</div>
+            <h3>SEO técnico & contenidos</h3>
+            <p>Auditoría, optimización on-page, estrategia de contenidos orientada a conversión.</p>
+            <a class="learn" href="#contact">Solicitar SEO</a>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🎯</div>
+            <h3>Publicidad (PPC)</h3>
+            <p>Google Ads, Meta Ads, campañas performance y optimización de CPA.</p>
+            <a class="learn" href="#contact">Hablar con experto</a>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🧩</div>
+            <h3>Diseño web conversión</h3>
+            <p>Landing pages, tiendas online y experiencia de usuario centrada en ventas.</p>
+            <a class="learn" href="#contact">Ver diseño</a>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">📱</div>
+            <h3>Social Media & Contenido</h3>
+            <p>Estrategia de contenido, planes editoriales, community management y reels.</p>
+            <a class="learn" href="#contact">Planificar campaña</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section alt" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <h2 id="portfolio-title">Portafolio destacado</h2>
+        <p class="section-sub">Casos reales con resultados medibles.</p>
+
+        <div class="masonry">
+          <figure class="project">
+            <img src="portafolio.jpg" alt="E-commerce X" />
+            <figcaption>
+              <h4>E-commerce X</h4>
+              <p>+200% ventas en 6 meses</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project">
+            <img src="multicanal.jpg" alt="Marca Y" />
+            <figcaption>
+              <h4>Marca Y</h4>
+              <p>Campañas multicanal + coste por lead -40%</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project">
+            <img src="startup.jpg" alt="Startup Z" />
+            <figcaption>
+              <h4>Startup Z</h4>
+              <p>Lanzamiento, +10k usuarios</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Planes y precios</h2>
+        <p class="section-sub">Planes pensados para startups, pymes y empresas.</p>
+
+        <div class="grid pricing-grid">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price">USD 499<span>/mes</span></p>
+            <ul>
+              <li>Auditoría básica</li>
+              <li>2 campañas mensuales</li>
+              <li>Reportes</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Elegir</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="ribbon">Más popular</div>
+            <h3>Growth</h3>
+            <p class="price">USD 1299<span>/mes</span></p>
+            <ul>
+              <li>SEO + Contenido</li>
+              <li>Campañas Ads optimizadas</li>
+              <li>Landing + CRO</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Elegir</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Personalizado</p>
+            <ul>
+              <li>Estrategia a medida</li>
+              <li>Equipo dedicado</li>
+              <li>Integraciones</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section alt" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">Testimonios</h2>
+        <div class="grid testimonial-grid">
+          <blockquote class="testimonial">
+            <p>"Gracias a la agencia aumentamos ventas un 3x en 4 meses. Equipo proactivo y resultados claros."</p>
+            <footer>— Laura, CEO E-commerce</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>"Excelente comunicación y visión estratégica. Recomendados para pymes."</p>
+            <footer>— Andrés, Director Marketing</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog preview -->
+    <section class="section" id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <h2 id="blog-title">Últimos artículos</h2>
+        <div class="grid blog-grid">
+          <article class="post-card">
+            <img src="seo.jpg" alt="SEO 2025" />
+            <h4>Guía práctica de SEO 2025</h4>
+            <p>Aprende los pasos para posicionar tu web en 2025 con ejemplos claros.</p>
+            <a class="read-more" href="#blog">Leer</a>
+          </article>
+
+          <article class="post-card">
+            <img src="campañas.jpeg" alt="Ads eficientes" />
+            <h4>Optimiza tus campañas Ads</h4>
+            <p>Tácticas para bajar CPA y subir la conversión en campañas pagas.</p>
+            <a class="read-more" href="#blog">Leer</a>
+          </article>
+
+          <article class="post-card">
+            <img src="contenido.jpg" alt="Contenido viral" />
+            <h4>Cómo crear contenido viral</h4>
+            <p>Frameworks y ejemplos para generar contenido con alto engagement.</p>
+            <a class="read-more" href="#blog">Leer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Qué resultados garantizan?</button>
+            <div class="faq-a" hidden>Trabajamos con KPIs claros; no garantizamos un número exacto porque depende del mercado, pero sí garantizamos implementación profesional y reportes constantes.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">¿Cómo empezamos?</button>
+            <div class="faq-a" hidden>Comenzamos con una auditoría gratuita y una propuesta estratégica detallada.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Contáctanos</h2>
+          <p>¿Listo para crecer? Déjanos tus datos y te contactamos en 48 horas hábiles.</p>
+
+          <form id="contact-form" class="form" novalidate>
+            <div class="form-row">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" required placeholder="Tu nombre" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+            </div>
+
+            <div class="form-row actions">
+              <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+              <button class="btn btn-ghost" type="reset">Limpiar</button>
+            </div>
+            <p class="form-note">Al enviar aceptas nuestros términos. Responderemos en 1-2 días hábiles.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside" aria-hidden="true">
+          <div class="card contact-card">
+            <h3>Datos de la agencia</h3>
+            <p><strong>Email:</strong> hola@agenciadigital.com</p>
+            <p><strong>Tel / WhatsApp:</strong> +57 300 000 0000</p>
+            <p><strong>Ubicación:</strong> Bogotá, Colombia (trabajamos remoto)</p>
+            <div class="socials">
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Agencia Digital</strong>
+          <p>Soluciones de marketing, creatividad y tecnología.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Enlaces de pie de página">
+          <a href="#services">Servicios</a>
+          <a href="#portfolio">Portafolio</a>
+          <a href="#pricing">Precios</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+
+        <div>
+          <form id="newsletter" class="newsletter">
+            <label for="email-news">Suscríbete</label>
+            <div class="inline">
+              <input id="email-news" type="email" placeholder="tu@correo.com" />
+              <button class="btn btn-primary" type="button">Suscribir</button>
+            </div>
+          </form>
+          <small>© <span id="year"></span> Agencia Digital. Todos los derechos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp-fab" href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <!-- Modal (lead magnet) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar">✕</button>
+      <h3>Guía: 10 tácticas para mejorar conversiones</h3>
+      <p>Descarga nuestra guía rápida con tácticas probadas para aumentar conversiones en tu web.</p>
+      <a class="btn btn-primary" href="#" download>Descargar PDF</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Basic helpers
+    const navToggle = document.getElementById('nav-toggle');
+    const primaryNav = document.getElementById('primary-nav');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      primaryNav.classList.toggle('open');
+    });
+
+    // Close menu on link click (mobile)
+    document.querySelectorAll('.primary-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        primaryNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+      });
+    });
+
+    // Back to top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) backToTop.classList.add('visible');
+      else backToTop.classList.remove('visible');
+
+      // sticky header shadow
+      document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Modal
+    const modal = document.getElementById('modal');
+    const openModalBtn = document.getElementById('openModal');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    openModalBtn && openModalBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('open');
+    });
+    closeModalBtn && closeModalBtn.addEventListener('click', () => {
+      modal.setAttribute('aria-hidden', 'true');
+      modal.classList.remove('open');
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.setAttribute('aria-hidden', 'true');
+        modal.classList.remove('open');
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        const panel = btn.nextElementSibling;
+        if (panel) {
+          if (expanded) panel.hidden = true;
+          else panel.hidden = false;
+        }
+      });
+    });
+
+    // Contact form basic validation + fake submit
+    const form = document.getElementById('contact-form');
+    form && form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if (!name || !email || !message) {
+        alert('Por favor completa todos los campos.');
+        return;
+      }
+      // Simulate send
+      alert('Gracias. Tu mensaje fue enviado. Nos contactaremos pronto.');
+      form.reset();
+    });
+
+    // Current year footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
